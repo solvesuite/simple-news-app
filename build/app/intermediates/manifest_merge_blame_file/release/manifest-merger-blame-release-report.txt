@@ -1,0 +1,115 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.news"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:2:5-66
+11-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:2:22-64
+12    <!--
+13         Required to query activities that can process text, see:
+14         https://developer.android.com/training/package-visibility and
+15         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+16
+17         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+18    -->
+19    <queries>
+19-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:41:5-46:15
+20        <intent>
+20-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:42:9-45:18
+21            <action android:name="android.intent.action.PROCESS_TEXT" />
+21-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:43:13-72
+21-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:43:21-70
+22
+23            <data android:mimeType="text/plain" />
+23-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:44:13-50
+23-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:44:19-48
+24        </intent>
+25    </queries>
+26
+27    <application
+28        android:name="android.app.Application"
+28-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:5:9-42
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.6.0] C:\Users\sanuda jayasinghe\.gradle\caches\transforms-3\284a410c767ad6c7a2b0ffc8d8d85981\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+30        android:icon="@mipmap/ic_launcher"
+30-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:6:9-43
+31        android:label="news" >
+31-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:4:9-29
+32        android:networkSecurityConfig="@xml/network_security_config"
+33        <activity
+33-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:8:9-29:20
+34            android:name="com.example.news.MainActivity"
+34-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:9:13-41
+35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+35-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:14:13-163
+36            android:exported="true"
+36-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:10:13-36
+37            android:hardwareAccelerated="true"
+37-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:15:13-47
+38            android:launchMode="singleTop"
+38-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:11:13-43
+39            android:taskAffinity=""
+39-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:12:13-36
+40            android:theme="@style/LaunchTheme"
+40-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:13:13-47
+41            android:windowSoftInputMode="adjustResize" >
+41-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:16:13-55
+42
+43            <!--
+44                 Specifies an Android theme to apply to this Activity as soon as
+45                 the Android process has started. This theme is visible to the user
+46                 while the Flutter UI initializes. After that, this theme continues
+47                 to determine the Window background behind the Flutter UI.
+48            -->
+49            <meta-data
+49-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:21:13-24:17
+50                android:name="io.flutter.embedding.android.NormalTheme"
+50-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:22:15-70
+51                android:resource="@style/NormalTheme" />
+51-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:23:15-52
+52
+53            <intent-filter>
+53-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:25:13-28:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:26:17-68
+54-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:26:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:27:17-76
+56-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:27:27-74
+57            </intent-filter>
+58        </activity>
+59        <!--
+60             Don't delete the meta-data below.
+61             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+62        -->
+63        <meta-data
+63-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:32:9-34:33
+64            android:name="flutterEmbedding"
+64-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:33:13-44
+65            android:value="2" />
+65-->C:\Flutter Projects\news\android\app\src\main\AndroidManifest.xml:34:13-30
+66
+67        <uses-library
+67-->[androidx.window:window:1.0.0-beta04] C:\Users\sanuda jayasinghe\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+68            android:name="androidx.window.extensions"
+68-->[androidx.window:window:1.0.0-beta04] C:\Users\sanuda jayasinghe\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+69            android:required="false" />
+69-->[androidx.window:window:1.0.0-beta04] C:\Users\sanuda jayasinghe\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+70        <uses-library
+70-->[androidx.window:window:1.0.0-beta04] C:\Users\sanuda jayasinghe\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+71            android:name="androidx.window.sidecar"
+71-->[androidx.window:window:1.0.0-beta04] C:\Users\sanuda jayasinghe\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+72            android:required="false" />
+72-->[androidx.window:window:1.0.0-beta04] C:\Users\sanuda jayasinghe\.gradle\caches\transforms-3\f302e75fb7efd781bcf1a29281c188da\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+73    </application>
+74
+75</manifest>
